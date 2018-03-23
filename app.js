@@ -26,6 +26,11 @@
 // para rodar como no servidor
 // npm start
 
+// pra publicar:
+// 1 - tem que fazer o commit no git
+// git commit -am "mudando configuracao node"
+// 2 - tem que fazer o push para o heroku
+// git push heroku master
 
 //importando o arquivo express que está na pasta config
 var app = require('./config/express')();

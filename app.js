@@ -43,7 +43,7 @@ var app = require('./config/express')();
 var http = require('http').Server(app); 
 var io = require('socket.io')(http);
 
-app.set('io', io);
+app.set('io', io); 
 
 // seta a porta da aplicação para a de ambiente ou a 3000
 var porta = process.env.PORT || 3000;

@@ -46,7 +46,7 @@ var io = require('socket.io')(http);
 app.set('io', io);
 
 // seta a porta da aplicação para a de ambiente ou a 3000
-var porta = process.env.PORT || 8000;
+var porta = process.env.PORT || 3000;
 
 //inicializa o servidor para ouvir a porta porta
 http.listen(porta, function () {

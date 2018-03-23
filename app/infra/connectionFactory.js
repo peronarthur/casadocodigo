@@ -37,19 +37,19 @@ function connectMYSQL() {
 		var grupos = urlDeConexao.match('mysql:\/\/(.*):(.*)@(.*)\/(.*)\?reconnect=true');
 		// var grupos = urlDeConexao.match(/mysql:\/\/[1]:[2]@[3]\/[4]\?reconnect=true);
 		
-		return mysql.createConnection({
-			host : grupos[3],
-			user : grupos[1],
-			password : grupos[2],
-			database : grupos[4]
-		});
-
 		// return mysql.createConnection({
-		// 	host : 'us-cdbr-iron-east-05.cleardb.net',
-		// 	user : 'be573c045277af',
-		// 	password : '665ad8ec',
-		// 	database : 'heroku_e62467cf7eacde6'
+		// 	host : grupos[3],
+		// 	user : grupos[1],
+		// 	password : grupos[2],
+		// 	database : grupos[4]
 		// });
+
+		return mysql.createConnection({
+			host : 'us-cdbr-iron-east-05.cleardb.net',
+			user : 'be573c045277af',
+			password : '665ad8ec',
+			database : 'heroku_e62467cf7eacde6'
+		});
 }
 
 module.exports = function () {
